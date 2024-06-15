@@ -1,0 +1,4 @@
+airflow/logs
+airflow/logs/scheduler/latest
+node_modules/*
+.venv/*
