@@ -26,15 +26,15 @@ Cmd 👇
 .venv\Scripts\activate.bat
 ```
 
-> **Atenção:** Todo o ambiente foi realizado com o sistema operacional Windows, em outros sistemas operacionais os códigos podem ser diferentes
+> **Atenção:** Todo o ambiente foi configurado com o sistema operacional Windows. Em outros sistemas operacionais, os códigos podem ser diferentes.
 
-#### 3. Navegar até a pasta onde iremos realizar as DAG e o ETL
+#### 3. Navegar até a pasta onde iremos realizar as DAGs e o ETL
 ```bash copy
 cd airflow
 ```
 
 #### 4.	Configurar a Variável de Ambiente AIRFLOW_UID
-Caso já tenha o aqruivo .ambiente criado, editar ou excluir o mesmo
+Caso já tenha o arquivo .ambiente criado, editar ou excluir o mesmo
 ```bash  copy
 $userId = [System.Security.Principal.WindowsIdentity]::GetCurrent().User.Value
 echo "AIRFLOW_UID=$userId" > .ambiente
@@ -47,43 +47,24 @@ docker compose up airflow-init
 
 #### 6. Inicializando os containers no modo desanexado
 ```bash copy
-ocker compose up -d
+docker compose up -d
 ```
 
 #### 7. Verificando a IU do Airflow
-Agora abre seu navegador e visite https://localhost:8080/, e devemos acessar a página de login do Airflow:
+Agora abra seu navegador e visite https://localhost:8080/, e você deverá acessar a página de login do Airflow:
 login padrão: airflow
-Senha padrão: airflow
+senha padrão: airflow
 
-#### 8. Conectando o Dbeaver![alt text](image.png)
+#### 8. Conectando o Dbeaver!
+Conforme imagem abaixo, atenção na porta que deve ser 5433:
+[alt text](image.png)
 
-##### 8.1. Inicializar o Terraform na pasta atual
+##### 8.1. Em seguida, clique duas vezes no ícone SQL no canto superior esquerdo para escrever a consulta SQL, isso criará um esquema de dados no banco de dados.
 ```bash copy
-terraform init
-```
-##### 8.2. Validar os Códigos do Terraform nos arquivos .tf
-```bash copy
-terraform validate
-```
-##### 8.3. Ajustar a formatação dos arquivos .tf
-```bash copy
-terraform fmt
-```
-##### 8.4. Gerar um plano de implantação do Terraform
-```bash copy
-terraform plan
-```
-##### 8.5. Implantar os Códigos do Terraform na cloud - assinatura MS LEARN SANDBOX
-```bash copy
-terraform apply
-```
-##### 8.6. Logar no portal do Azure e validar a criação do Azure Data Lake Storage Gen2
-9. Logar no [portal.azure.com](https://portal.azure.com/) e conferir o deploy do ADLS.
-
-##### 8.7. Remover todos os recursos implantados na cloud - assinatura MS LEARN SANDBOX
-10. Destruir os recursos criados.
-```bash copy
-terraform destroy
+CREATE SCHEMA data;
 ```
 
-> <b>Nota:</b> Caso queira usar o `apply` e `destroy` sem a necessidade confirmação, você pode usar a tag `-auto-approve` (use com bastante cuidado!).
+##### 9 Consultando os dados
+Com a nossa estrutura pronta, agora é só finalizar as DAGs, onde vamos realizar o ETL e limpar os dados até estarem prontos para o usuário final.
+
+> <b>Nota:</b> Referência do arquivo: https://intuitivedataguide.medium.com/building-a-simple-etl-with-airflow-postgresql-and-docker-a2b1a2b202ec. 
