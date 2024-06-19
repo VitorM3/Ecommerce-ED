@@ -1,5 +1,5 @@
 services:
-  postgres:
+  database_base:
     image: postgres
     volumes:
       - ./database.sql:/docker-entrypoint-initdb.d/database.sql
