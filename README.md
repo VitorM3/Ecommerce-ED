@@ -1,7 +1,7 @@
 # Ecommerce &middot; [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Release](https://img.shields.io/github/v/release/VitorM3/Ecommerce-ED)
 
 
-Um modelo genérico de E-commerce para validação de conhecimentos da matéria de Engenharia de Dados 
+Um modelo genérico de E-commerce para validação de conhecimentos da matéria de Engenharia de Dados.
 
 ## Começando
 
@@ -54,7 +54,7 @@ Nosso código de conduta é derivado do [Contributor Covenant](https://www.contr
 ### Guia de Colaboração
 Leia o [CONTRIBUTING](CONTRIBUTING.md) para entender o processo de contribuição ao desenvolvimento do nosso projeto, auxiliando com possíveis bugfixes e melhorias. 
 
-### Boas primeiras questões
+### Boas primeiras Issues
 Para se familiarizar com o projeto, você pode começar verificando as issues com o rótulo "[good first issue](https://github.com/VitorM3/Ecommerce-ED/labels/good%20first%20issue)". Estas possuem bugs ou aprimoramentos mais simples de serem resolvidos, geralmente com escopos limitados e perfeito para quem está começando a contribuir com o nosso projeto.
 
 ## Versão
