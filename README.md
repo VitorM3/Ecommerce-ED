@@ -13,7 +13,7 @@
 #### 1. Criando Ambiente Virtual
 Dentro da pasta raiz do nosso diretorio vamos executar o seguinte comando
 ```bash  copy
-python -m venv.venv
+python -m venv .venv
 ```
 
 #### 2. Após isso vamos ativar nosso ambiente virtual criado com o comando acima
