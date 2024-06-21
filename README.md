@@ -19,7 +19,7 @@ python -m venv .venv
 #### 2. Após isso vamos ativar nosso ambiente virtual criado com o comando acima
 PowerShell 👇
 ```bash  copy
-venv\Scripts\Activate
+.venv\Scripts\Activate
 ```
 Cmd 👇
 ```bash  copy
