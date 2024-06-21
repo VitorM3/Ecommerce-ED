@@ -1,6 +1,4 @@
-# Ecommerce
-
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+# Ecommerce &middot; [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Release](https://img.shields.io/github/v/release/VitorM3/Ecommerce-ED)
 
 
 Um modelo genérico de E-commerce para validação de conhecimentos da matéria de Engenharia de Dados 
@@ -31,47 +29,42 @@ Terminar com um exemplo de como obter dados do sistema ou como usá-los para uma
 
 ## Ferramentas utilizadas
 
-⚠️ **TODO** ⚠️ Mencione as ferramentas que você usou para criar seu projeto
+⚠️ **TODO** ⚠️ Mencionar as ferramentas que usamos
+<div align="center">
 
-- Ferramenta 1 + link - Breve descrição
-- Ferramenta 2 + link - Breve descrição
-- Ferramenta 3 + link - Breve descrição
+# [![Postgres](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/) [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/) [![Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)](https://spark.apache.org/)
+
+</div>
+
+- PostgreSQL - Banco de dados relacional 
+- Python - Linguagem de programação utilizada para criar os scripts de extração, transformação e carga de dados
+- Docker - Containerização de aplicações
+- Apache Spark - Processamento de dados em larga escala
 
 ## Colaboração
 
-⚠️ **TODO** ⚠️ Por favor, leia o [COLABORACAO](https://gist.github.com/usuario/colaboracao.md) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
-
-Se desejar publicar suas modificações em um repositório remoto no GitHub, siga estes passos:
-
-1. Crie um novo repositório vazio no GitHub.
-2. No terminal, navegue até o diretório raiz do projeto.
-3. Execute os seguintes comandos:
-
-```bash
-git remote set-url origin https://github.com/seu-usuario/nome-do-novo-repositorio.git
-git add .
-git commit -m "Adicionar minhas modificações"
-git push -u origin master
-```
-
-Isso configurará o repositório remoto e enviará suas modificações para lá.
+Por favor, leia o [CONTRIBUTING](CONTRIBUTING.md) para entender o processo de contribuição ao nosso projeto. Para obter detalhes sobre o nosso código de conduta basta acessar o [CODE OF CONDUCT](CODE_OF_CONDUCT.md).
 
 ## Versão
 
-⚠️ **TODO** ⚠️ Fale sobre a versão e o controle de versões para o projeto. Citar CHANGELOG.md
+O versionamento é feito com base na metodologia [SEMVER](https://semver.org/lang/pt-BR/). Explore as [tags neste repositório](https://github.com/VitorM3/Ecommerce-ED/tags) para ver todas as versões disponíveis e o [CHANGELOG.md](CHANGELOG.md) para saber mais sobre as alterações em cada versão.
 
 ## Autores
 
-⚠️ **TODO** ⚠️ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
+* **[Angelo José da Rosa](https://github.com/angelum23)** - *Orquestração*
+* **[Danilo Formanski](https://github.com/danilean)** - *Documentação*
+* **[João Victor Miotelli Vitali](https://github.com/JoaoMiotelli)** - *Orquestração*
+* **[Lucas de Oliveira Alano](https://github.com/LucasAlano)** - *Orquestração*
+* **[Vinicius Albino dos Santos](https://github.com/Shinguek0)** - *Data Visualization*
+* **[Vitor Loch Mafei Rosa](https://github.com/VitorM3)** - *DBA*
+* **[Vitor Minatto Barp](https://github.com/Minattoo)** - *Data Visualization*
+* **[Yuri Lopes Machado](https://github.com/YuriLopesM)** - *Documentação*
 
-* **Aluno 1** - *Trabalho Inicial* - [(https://github.com/linkParaPerfil)](https://github.com/linkParaPerfil)
-* **Aluno 2** - *Documentação* - [https://github.com/linkParaPerfil](https://github.com/linkParaPerfil)
-
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
+Você também pode ver a lista de todos os [colaboradores](COLABORATORS.md) que participaram deste projeto.
 
 ## Licença
 
-Este projeto está sob a licença MIT - veja o arquivo [LICENSE](https://github.com/VitorM3/Ecommerce-ED/blob/main/LICENSE) para detalhes.
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](./LICENSE) para detalhes.
 
 ## Referências
 
