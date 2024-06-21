@@ -32,18 +32,30 @@ Terminar com um exemplo de como obter dados do sistema ou como usá-los para uma
 ⚠️ **TODO** ⚠️ Mencionar as ferramentas que usamos
 <div align="center">
 
-# [![Postgres](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/) [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/) [![Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)](https://spark.apache.org/)
+# [![Postgres](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/) [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/) [![Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)](https://spark.apache.org/) [![AirFlow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white)](https://airflow.apache.org/) [![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com/)
 
 </div>
 
-- PostgreSQL - Banco de dados relacional 
-- Python - Linguagem de programação utilizada para criar os scripts de extração, transformação e carga de dados
-- Docker - Containerização de aplicações
-- Apache Spark - Processamento de dados em larga escala
+- **PostgreSQL** - Banco de dados relacional 
+- **Python** - Linguagem de programação utilizada para criar os scripts de extração, transformação e carga de dados
+- **Docker** - Containerização de aplicações
+- **Apache Spark** - Processamento de dados em larga escala
+- **Apache Airflow** - Orquestrador de tarefas
+- **Visual Studio Code** - Editor de código
 
 ## Colaboração
+O principal intuíto deste projeto é a validação de conhecimentos adquiridos na matéria de Engenharia de Dados, por isso, a colaboração é essencial para o desenvolvimento do projeto. 
 
-Por favor, leia o [CONTRIBUTING](CONTRIBUTING.md) para entender o processo de contribuição ao nosso projeto. Para obter detalhes sobre o nosso código de conduta basta acessar o [CODE OF CONDUCT](CODE_OF_CONDUCT.md).
+Leia abaixo como você pode colaborar com o projeto e ajudar compartilhando seu conhecimento e experiência.
+
+### Código de Conduta
+Nosso código de conduta é derivado do [Contributor Covenant](https://www.contributor-covenant.org/), versão 2.1, disponível em [CODE OF CONDUCT](CODE_OF_CONDUCT.md).
+
+### Guia de Colaboração
+Leia o [CONTRIBUTING](CONTRIBUTING.md) para entender o processo de contribuição ao desenvolvimento do nosso projeto, auxiliando com possíveis bugfixes e melhorias. 
+
+### Boas primeiras questões
+Para se familiarizar com o projeto, você pode começar verificando as issues com o rótulo "[good first issue](https://github.com/VitorM3/Ecommerce-ED/labels/good%20first%20issue)". Estas possuem bugs ou aprimoramentos mais simples de serem resolvidos, geralmente com escopos limitados e perfeito para quem está começando a contribuir com o nosso projeto.
 
 ## Versão
 
