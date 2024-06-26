@@ -1,0 +1,12 @@
+site_name: Eccomerce-ED
+nav:
+  - Home: index.md
+  - Arquitetura: arquitetura.md
+  - Componentes:
+      - Apache Spark: componentes/apache_spark.md
+      - Apache Airflow: componentes/apache_airflow.md
+      - MinIO: componentes/minio.md
+  - Pipeline de Dados: pipeline.md
+  - Dashboard: dashboard.md
+theme:
+  name: material
