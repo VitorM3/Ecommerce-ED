@@ -62,6 +62,3 @@ Artigos e Blogs:
 - **"Data Visualization Best Practices in Power BI" (SQLBI)**: Melhores práticas para visualização de dados utilizando Power BI.
 
 <br>
-
-## Conclusão
-A criação de um dashboard no Power BI, suportada por uma pipeline de dados robusta, permite uma visualização clara e interativa das métricas e KPIs relevantes. A utilização de recursos adicionais, como vídeos e artigos, contribui para a entrega de um produto final de alta qualidade, alinhado às melhores práticas do mercado.
