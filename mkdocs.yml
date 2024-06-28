@@ -2,12 +2,9 @@ site_name: Eccomerce-ED
 nav:
   - Home: index.md
   - Padrões do Projeto: padroes.md
+  - Ferramentas: ferramentas.md
   - Arquitetura: arquitetura.md
-  - Ferramentas:
-      - Apache Spark: componentes/apache_spark.md
-      - Apache Airflow: componentes/apache_airflow.md
-      - MinIO: componentes/minio.md
-  - Pipeline de Dados: pipeline.md
+  - ETL: etl.md
   - Dashboard: dashboard.md
 theme:
   name: dracula

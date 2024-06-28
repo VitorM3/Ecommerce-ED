@@ -7,7 +7,6 @@ Um modelo genérico de E-commerce para validação de conhecimentos da matéria 
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 
 ## Desenho de Arquitetura
 
@@ -16,16 +15,20 @@ Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar 
 ## Pré-requisitos
 
 Para que o projeto funcione devidamente é necessário que seja instalado em um computador com as seguintes configurações:
-Memoria Ram: 16gb
-Processador: Intel core i5 6gh ou superior
-Espaço em disco: 6gb
 
-Além disto é necessário a previa instalação e configuração do docker:
+```
+Memoria Ram: 16gb
+Processador: Intel Core i5 6gh ou superior
+Espaço em disco: 6gb
+```
+
+Além disto é necessário a prévia instalação e configuração do Docker:
 https://docs.docker.com/engine/install/
 
 ## Instalação
 
-Para realizar a instalação é rode o comando
+Para realizar a instalação, rode o comando 
+
 ```bash
 docker compose up 
 ```
@@ -33,14 +36,16 @@ Este comando irá subir todos os containers que farão o processo funcionar devi
 
 ## Implantação
 
-Após instalado, será necessário a configuração das conexões do apache spark e do banco base postreSql. Esta configuração poderá ser feita dentro da aba de conexões do apache airflow. Localizada em:
+Após instalado, será necessário a configuração das conexões do Apache Spark e do banco base PostgreSql. Esta configuração poderá ser feita dentro da aba de conexões do Apache Airflow, localizada em:
+
 > admin > Connections
 
 ## Ferramentas utilizadas
 
 <div align="center">
 
-# [![Postgres](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/) [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/) [![Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)](https://spark.apache.org/) [![AirFlow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white)](https://airflow.apache.org/) [![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com/) ![MiniO](https://img.shields.io/badge/MinIO--pink?style=for-the-badge&logo=MinIO)
+# [![Postgres](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/) [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/) [![Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)](https://spark.apache.org/) [![AirFlow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white)](https://airflow.apache.org/) [![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com/) [![Astro CLI](https://img.shields.io/badge/Astro%20CLI---?style=for-the-badge&color=%235468ff)](https://www.astronomer.io/docs/astro/cli/overview) [![MinIO](https://img.shields.io/badge/MinIO---?style=for-the-badge&logo=MinIO&color=rgb(199%2044%2072))](https://min.io/)
+
 
 
 </div>
