@@ -185,6 +185,20 @@ i18n = ["babel (>=2.9.0)"]
 min-versions = ["babel (==2.9.0)", "click (==7.0)", "colorama (==0.4)", "ghp-import (==1.0)", "importlib-metadata (==4.4)", "jinja2 (==2.11.1)", "markdown (==3.3.6)", "markupsafe (==2.0.1)", "mergedeep (==1.3.4)", "mkdocs-get-deps (==0.2.0)", "packaging (==20.5)", "pathspec (==0.11.1)", "pyyaml (==5.1)", "pyyaml-env-tag (==0.1)", "watchdog (==2.0)"]
 
 [[package]]
+name = "mkdocs-dracula-theme"
+version = "1.0.7"
+description = "🧛🏻‍♂️ Dark theme for Mkdocs"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "mkdocs-dracula-theme-1.0.7.tar.gz", hash = "sha256:fee49784a04b1d8432cd026edcd5333397e0926eeb59be3add0112df5d003682"},
+    {file = "mkdocs_dracula_theme-1.0.7-py3-none-any.whl", hash = "sha256:cb9a6bb7d9d6a958b1a4e7a0e55ba25fd25291cafe284ce3a4307bc609530855"},
+]
+
+[package.dependencies]
+mkdocs = ">=1.4.3"
+
+[[package]]
 name = "mkdocs-get-deps"
 version = "0.2.0"
 description = "MkDocs extension that lists all dependencies according to a mkdocs.yml file"
@@ -199,17 +213,6 @@ files = [
 mergedeep = ">=1.3.4"
 platformdirs = ">=2.2.0"
 pyyaml = ">=5.1"
-
-[[package]]
-name = "mkdocs-gitbook"
-version = "0.0.1"
-description = "Default theme for GitBook for Mkdocs"
-optional = false
-python-versions = "*"
-files = [
-    {file = "mkdocs-gitbook-0.0.1.tar.gz", hash = "sha256:c094f9d77e47d54379a0d3816097b56511e760fedb23dcf89bc925f6ac4e75f3"},
-    {file = "mkdocs_gitbook-0.0.1-py2.py3-none-any.whl", hash = "sha256:e929c3caf655076eaa030128cfd104687b9ec14644d54f4a175d43e13ac60ef8"},
-]
 
 [[package]]
 name = "packaging"
@@ -395,4 +398,4 @@ watchmedo = ["PyYAML (>=3.10)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "dfe3fbd9a5b74db1b1a26482da5072d4295b8d4accc692be74c4877eaaa787c8"
+content-hash = "b068a2f7958b507a336ee6cf7dc692829a22c2fc3227c018aaf3ce3d6f136931"
