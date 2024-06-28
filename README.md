@@ -15,24 +15,33 @@ Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar 
 
 ## Pré-requisitos
 
-⚠️ **TODO** ⚠️ Inserir pré-requisitos com trechos de código.
+Para que o projeto funcione devidamente é necessário que seja instalado em um computador com as seguintes configurações:
+Memoria Ram: 16gb
+Processador: Intel core i5 6gh ou superior
+Espaço em disco: 6gb
+
+Além disto é necessário a previa instalação e configuração do docker:
+https://docs.docker.com/engine/install/
 
 ## Instalação
 
-⚠️ **TODO** ⚠️ Inserir guia de instalação com trechos de código.
-
-Terminar com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
+Para realizar a instalação é rode o comando
+```bash
+docker compose up 
+```
+Este comando irá subir todos os containers que farão o processo funcionar devidamente
 
 ## Implantação
 
-⚠️ **TODO** ⚠️ Adicionar notas adicionais sobre como implantar isso em um sistema ativo.
+Após instalado, será necessário a configuração das conexões do apache spark e do banco base postreSql. Esta configuração poderá ser feita dentro da aba de conexões do apache airflow. Localizada em:
+> admin > Connections
 
 ## Ferramentas utilizadas
 
-⚠️ **TODO** ⚠️ Mencionar as ferramentas que usamos
 <div align="center">
 
-# [![Postgres](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/) [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/) [![Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)](https://spark.apache.org/) [![AirFlow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white)](https://airflow.apache.org/) [![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com/)
+# [![Postgres](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/) [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/) [![Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)](https://spark.apache.org/) [![AirFlow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white)](https://airflow.apache.org/) [![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com/) ![MiniO](https://img.shields.io/badge/MinIO--pink?style=for-the-badge&logo=MinIO)
+
 
 </div>
 
@@ -82,4 +91,8 @@ Este projeto está sob a licença MIT - veja o arquivo [LICENSE](./LICENSE) para
 
 ## Referências
 
-⚠️ **TODO** ⚠️ Cite aqui todas as referências utilizadas neste projeto, pode ser outros repositórios, livros, artigos de internet etc.
+* **[Documentação Apache Spark](https://spark.apache.org/docs/latest/)**
+* **[Documentação Apache Airflow](https://airflow.apache.org/docs/)**
+* **[Documentação Delta Lake](https://delta.io/)**
+* **[Bíblia Sagrada](https://www.bibliaonline.com.br/)**
+
