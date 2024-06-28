@@ -1,4 +1,4 @@
-# Ecommerce &middot; [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Release](https://img.shields.io/github/v/release/VitorM3/Ecommerce-ED)
+# Ecommerce &middot; [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Release](https://img.shields.io/github/v/release/VitorM3/Ecommerce-ED) [![Deploy MkDocs to GitHub Pages](https://github.com/VitorM3/Ecommerce-ED/actions/workflows/deploy-mkdocs.yml/badge.svg)](https://github.com/VitorM3/Ecommerce-ED/actions/workflows/deploy-mkdocs.yml)
 
 
 Um modelo genérico de E-commerce para validação de conhecimentos da matéria de Engenharia de Dados.
