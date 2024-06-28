@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ecommerce-ed"
+version = "0.1.0"
+description = "Ecommerce solution for Data Engineer grade"
+authors = ["Yuri Lopes Machado <yurilopesmachado@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mkdocs = "^1.6.0"
+mkdocs-gitbook = "^0.0.1"
+
+[tool.poetry.scripts]
+serve = "mkdocs:serve"
+build = "mkdocs:build"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

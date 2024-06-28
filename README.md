@@ -42,6 +42,8 @@ Terminar com um exemplo de como obter dados do sistema ou como usá-los para uma
 - **Apache Spark** - Processamento de dados em larga escala
 - **Apache Airflow** - Orquestrador de tarefas
 - **Visual Studio Code** - Editor de código
+- **Astro CLI** - Ferramenta de linha de comando para gerenciamento de infraestrutura
+- **Minio** - Armazenamento de objetos
 
 ## Colaboração
 O principal intuíto deste projeto é a validação de conhecimentos adquiridos na matéria de Engenharia de Dados, por isso, a colaboração é essencial para o desenvolvimento do projeto. 
