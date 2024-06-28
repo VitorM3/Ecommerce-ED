@@ -1,0 +1,203 @@
+# Verify volumes
+version: "3.8"
+x-airflow-common:
+  &airflow-common
+  build: ./
+  networks:
+    - default_net
+  environment:
+    - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+    - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+    - AIRFLOW__CORE__FERNET_KEY=FB0o_zt4e3Ziq3LdUUO7F2Z95cvFFx16hU8jTeR1ASM=
+    - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    - AIRFLOW__LOGGING__LOGGING_LEVEL=INFO
+  volumes:
+    - ./sandbox/dags:/opt/airflow/dags # DAGs folder
+    - ./sandbox/spark/app:/usr/local/spark/app # Spark Scripts (same path in airflow and spark)
+    - ./sandbox/spark/resources:/usr/local/spark/resources # Spark Resources (same path in airflow and spark)
+    - ./airflow-data/logs:/opt/airflow/logs
+    - ./airflow-data/plugins:/opt/airflow/plugins
+    - ./airflow-data/airflow.cfg:/opt/airlfow/airflow.cfg
+    - ./sandbox/spark/libs:/usr/local/custom/libs # Resources (same path in airflow and spark)
+  depends_on:
+    - postgres
+
+
+services:  
+    # Postgres used by Airflow
+    postgres:
+        image: postgres:latest
+        networks:
+            - default_net
+        environment:
+            - POSTGRES_USER=airflow
+            - POSTGRES_PASSWORD=airflow
+            - POSTGRES_DB=airflow
+        ports:
+            - "5432:5432"
+    database_base:
+        image: postgres:latest
+        container_name: database_base
+        networks:
+            - default_net
+        volumes:
+        - ./database_base/database.sql:/docker-entrypoint-initdb.d/database.sql
+        environment:
+            - POSTGRES_PASSWORD=pass@
+        ports:
+        - "5436:5432"
+    database_dimensional:
+        image: postgres
+        container_name: database_dimensional
+        networks:
+            - default_net
+        volumes:
+        - ./database_dimensional/database.sql:/docker-entrypoint-initdb.d/database.sql
+        environment:
+            - POSTGRES_PASSWORD=pass@
+        ports:
+        - "5438:5432"
+    airflow-init:
+        << : *airflow-common
+        container_name: airflow_init
+        entrypoint: /bin/bash
+        command:
+        - -c
+        - airflow db init &&
+            airflow users create
+            --role Admin
+            --username airflow
+            --password airflow
+            --email airflow@airflow.com
+            --firstname airflow
+            --lastname airflow 
+        restart: on-failure
+
+    airflow-webserver:
+        << : *airflow-common
+        command: airflow webserver
+        depends_on:
+            - airflow-init
+        ports:
+        - 8080:8080
+        container_name: airflow_webserver
+        networks:
+            - default_net
+        restart: always
+
+    airflow-scheduler:
+        << : *airflow-common
+        command: airflow scheduler
+        depends_on:
+            - airflow-init
+        container_name: airflow_scheduler
+        restart: always
+        networks:
+            - default_net
+
+
+    # Spark with N workers
+    spark-master:
+        image: bitnami/spark:latest
+        #user: root # Run container as root container: https://docs.bitnami.com/tutorials/work-with-non-root-containers/
+        hostname: spark
+        networks:
+            - default_net
+        environment:
+            - SPARK_MODE=master
+            - SPARK_RPC_AUTHENTICATION_ENABLED=no
+            - SPARK_RPC_ENCRYPTION_ENABLED=no
+            - SPARK_DRIVER_MEMORY=3G
+            - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+            - SPARK_SSL_ENABLED=no
+        volumes:
+            - ./sandbox/spark/app:/usr/local/spark/app # Scripts (same path in airflow and spark)
+            - ./sandbox/spark/resources:/usr/local/spark/resources # Resources (same path in airflow and spark)
+            - ./sandbox/spark/libs:/usr/local/custom/libs # Resources (same path in airflow and spark)
+        ports:
+            - "8081:8080"
+            - "7077:7077"
+
+    spark-worker:
+        image: bitnami/spark:latest
+        #user: root
+        networks:
+            - default_net
+        environment:
+            - SPARK_MODE=worker
+            - SPARK_MASTER_URL=spark://spark:7077
+            - SPARK_WORKER_MEMORY=3G
+            - SPARK_WORKER_CORES=2
+            - SPARK_RPC_AUTHENTICATION_ENABLED=no
+            - SPARK_RPC_ENCRYPTION_ENABLED=no
+            - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+            - SPARK_SSL_ENABLED=no
+        volumes:
+            - ./sandbox/spark/app:/usr/local/spark/app # Scripts (same path in airflow and spark)
+            - ./sandbox/spark/resources:/usr/local/spark/resources # Resources (same path in airflow and spark)
+            - ./sandbox/spark/libs:/usr/local/custom/libs # Resources (same path in airflow and spark)
+
+    spark-worker2:
+        image: bitnami/spark:latest
+        #user: root
+        networks:
+            - default_net
+        environment:
+            - SPARK_MODE=worker
+            - SPARK_MASTER_URL=spark://spark:7077
+            - SPARK_WORKER_MEMORY=3G
+            - SPARK_WORKER_CORES=2
+            - SPARK_RPC_AUTHENTICATION_ENABLED=no
+            - SPARK_RPC_ENCRYPTION_ENABLED=no
+            - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+            - SPARK_SSL_ENABLED=no
+        volumes:
+            - ./sandbox/spark/app:/usr/local/spark/app # Scripts (same path in airflow and spark)
+            - ./sandbox/spark/resources:/usr/local/spark/resources # Resources (same path in airflow and spark)
+            - ./sandbox/spark/libs:/usr/local/custom/libs # Resources (same path in airflow and spark)
+
+    spark-worker3:
+        image: bitnami/spark:latest
+        #user: root
+        networks:
+            - default_net
+        environment:
+            - SPARK_MODE=worker
+            - SPARK_MASTER_URL=spark://spark:7077
+            - SPARK_WORKER_MEMORY=3G
+            - SPARK_WORKER_CORES=2
+            - SPARK_RPC_AUTHENTICATION_ENABLED=no
+            - SPARK_RPC_ENCRYPTION_ENABLED=no
+            - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+            - SPARK_SSL_ENABLED=no
+        volumes:
+            - ./sandbox/spark/app:/usr/local/spark/app # Scripts (same path in airflow and spark)
+            - ./sandbox/spark/resources:/usr/local/spark/resources # Resources (same path in airflow and spark)
+            - ./sandbox/spark/libs:/usr/local/custom/libs # Resources (same path in airflow and spark)
+
+    # Jupyter Notebooks
+    jupyter-pyspark:
+        image: bitnami/spark:latest # pyspark
+        #image: jupyter/all-spark-notebook:spark-3.2.1 # scala
+        #image: jupyter/datascience-notebook:latest # julia 
+        networks:
+            - default_net
+        ports:
+          - "8888:8888"
+        volumes:
+          - ./sandbox/notebooks:/home/jovyan/work/notebooks/
+    minio:
+        image: minio/minio
+        container_name: minio1
+        networks:
+            - default_net
+        ports:
+        - "9000:9000"
+        - "9001:9001"
+        environment:
+            MINIO_ROOT_USER: minio
+            MINIO_ROOT_PASSWORD: minio123
+        command: server /data --console-address ":9001"
+
+networks:
+    default_net:
