@@ -3,7 +3,12 @@ name: Deploy MkDocs to GitHub Pages
 on:
   push:
     branches:
-      - main # Deploy when changes are pushed to the main branch
+      - main               # Deploy when changes are pushed to the main branch
+    paths: 
+      - 'docs/**'          # Deploy when changes are made to the docs directory
+      - 'mkdocs.yml'       # Deploy when changes are made to the MkDocs configuration file
+      - 'pyproject.toml'   # Deploy when changes are made to the Poetry configuration file
+      - '.python-version'  # Deploy when changes are made to the Python version file
 
 jobs:
   build:
@@ -32,6 +37,25 @@ jobs:
 
       - name: Build MkDocs site
         run: poetry run mkdocs build
+
+      - name: Archive built site
+        uses: actions/upload-artifact@v2
+        with:
+          name: mkdocs-site
+          path: site
+
+  deploy:
+    needs: build  # Ensure the 'build' job completes successfully before deploying
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Download built site
+        uses: actions/download-artifact@v2
+        with:
+          name: mkdocs-site
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
