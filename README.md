@@ -11,7 +11,7 @@ Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar 
 
 ## Desenho de Arquitetura
 
-![System Architecture](./assets/System_Architecture.png "Arquitetura do Sistema")
+![System Architecture](./assets/System_Architectur.png "Arquitetura do Sistema")
 
 ## Pré-requisitos
 
