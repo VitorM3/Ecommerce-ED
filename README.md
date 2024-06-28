@@ -1,4 +1,4 @@
-# Ecommerce &middot; [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Release](https://img.shields.io/github/v/release/VitorM3/Ecommerce-ED) [![Deploy MkDocs to GitHub Pages](https://github.com/VitorM3/Ecommerce-ED/actions/workflows/deploy-mkdocs.yml/badge.svg)](https://github.com/VitorM3/Ecommerce-ED/actions/workflows/deploy-mkdocs.yml)
+# Ecommerce &middot; [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Release](https://img.shields.io/github/v/release/VitorM3/Ecommerce-ED)
 
 
 Um modelo genérico de E-commerce para validação de conhecimentos da matéria de Engenharia de Dados.
@@ -7,6 +7,7 @@ Um modelo genérico de E-commerce para validação de conhecimentos da matéria 
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
+Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 
 ## Desenho de Arquitetura
 
@@ -14,39 +15,24 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 ## Pré-requisitos
 
-Para que o projeto funcione devidamente é necessário que seja instalado em um computador com as seguintes configurações:
-
-```
-Memoria Ram: 16gb
-Processador: Intel Core i5 6gh ou superior
-Espaço em disco: 6gb
-```
-
-Além disto é necessário a prévia instalação e configuração do Docker:
-https://docs.docker.com/engine/install/
+⚠️ **TODO** ⚠️ Inserir pré-requisitos com trechos de código.
 
 ## Instalação
 
-Para realizar a instalação, rode o comando 
+⚠️ **TODO** ⚠️ Inserir guia de instalação com trechos de código.
 
-```bash
-docker compose up 
-```
-Este comando irá subir todos os containers que farão o processo funcionar devidamente
+Terminar com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
 
 ## Implantação
 
-Após instalado, será necessário a configuração das conexões do Apache Spark e do banco base PostgreSql. Esta configuração poderá ser feita dentro da aba de conexões do Apache Airflow, localizada em:
-
-> admin > Connections
+⚠️ **TODO** ⚠️ Adicionar notas adicionais sobre como implantar isso em um sistema ativo.
 
 ## Ferramentas utilizadas
 
+⚠️ **TODO** ⚠️ Mencionar as ferramentas que usamos
 <div align="center">
 
-# [![Postgres](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/) [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/) [![Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)](https://spark.apache.org/) [![AirFlow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white)](https://airflow.apache.org/) [![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com/) [![Astro CLI](https://img.shields.io/badge/Astro%20CLI---?style=for-the-badge&color=%235468ff)](https://www.astronomer.io/docs/astro/cli/overview) [![MinIO](https://img.shields.io/badge/MinIO---?style=for-the-badge&logo=MinIO&color=rgb(199%2044%2072))](https://min.io/)
-
-
+# [![Postgres](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/) [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/) [![Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)](https://spark.apache.org/) [![AirFlow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white)](https://airflow.apache.org/) [![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com/)
 
 </div>
 
@@ -85,7 +71,6 @@ O versionamento é feito com base na metodologia [SEMVER](https://semver.org/lan
 * **[Lucas de Oliveira Alano](https://github.com/LucasAlano)** - *Orquestração*
 * **[Vinicius Albino dos Santos](https://github.com/Shinguek0)** - *Data Visualization*
 * **[Vitor Loch Mafei Rosa](https://github.com/VitorM3)** - *DBA*
-* **[Vitor Loch Mafei Rosa](https://github.com/VitorLMR)** - *DBA*
 * **[Vitor Minatto Barp](https://github.com/Minattoo)** - *Data Visualization*
 * **[Yuri Lopes Machado](https://github.com/YuriLopesM)** - *Documentação*
 
@@ -97,8 +82,4 @@ Este projeto está sob a licença MIT - veja o arquivo [LICENSE](./LICENSE) para
 
 ## Referências
 
-* **[Documentação Apache Spark](https://spark.apache.org/docs/latest/)**
-* **[Documentação Apache Airflow](https://airflow.apache.org/docs/)**
-* **[Documentação Delta Lake](https://delta.io/)**
-* **[Bíblia Sagrada](https://www.bibliaonline.com.br/)**
-
+⚠️ **TODO** ⚠️ Cite aqui todas as referências utilizadas neste projeto, pode ser outros repositórios, livros, artigos de internet etc.

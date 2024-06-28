@@ -1,8 +1,17 @@
-# Documentação do projeto
+# Welcome to MkDocs
 
----
+For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-Este projeto é um exemplo de um sistema de Ecommerce focado para ser generalista e atender a maioria dos casos de uso comuns em sistemas de lojas virtuais. O intuito é gerar insights valiosos por meio da visualização de dados, utilizando de técnicas de pipelines de dados para a ingestão, transformação e visualização de dados.
+## Commands
 
-Visite as abas ao lado para mais informações sobre o projeto.
+- `mkdocs new [dir-name]` - Create a new project.
+- `mkdocs serve` - Start the live-reloading docs server.
+- `mkdocs build` - Build the documentation site.
+- `mkdocs -h` - Print help message and exit.
 
+## Project layout
+
+    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files.
