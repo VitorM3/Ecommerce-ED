@@ -9,6 +9,7 @@ on:
       - 'mkdocs.yml'       # Deploy when changes are made to the MkDocs configuration file
       - 'pyproject.toml'   # Deploy when changes are made to the Poetry configuration file
       - '.python-version'  # Deploy when changes are made to the Python version file
+      - '../workflows/deploy-mkdocs.yml'  # Deploy when changes are made to the workflow file
 
 jobs:
   build:
