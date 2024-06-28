@@ -16,14 +16,15 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Get Python version from .python-version
         id: python_version
         run: echo "PYTHON_VERSION=$(cat .python-version)" >> $GITHUB_ENV
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        - uses: actions/checkout@v4
+        - uses: actions/setup-python@v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -39,7 +40,7 @@ jobs:
         run: poetry run mkdocs build
 
       - name: Archive built site
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: mkdocs-site
           path: site
@@ -50,10 +51,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Download built site
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: mkdocs-site
 
