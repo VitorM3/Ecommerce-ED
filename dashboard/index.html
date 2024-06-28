@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Eccomerce-ED</title>
+        <title>Dashboard - Eccomerce-ED</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +12,14 @@
         
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="./assets/css/darcula-highlight.min.css">
+            <link rel="stylesheet" href="../assets/css/darcula-highlight.min.css">
 
-        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./assets/css/dracula-ui.min.css">
-        <link rel="stylesheet" href="./assets/css/mkdocs.min.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../assets/css/mkdocs.min.css">
 
         
-            <link  rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+            <link  rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
         
             <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
                 <script>hljs.initHighlightingOnLoad();</script>
@@ -66,28 +66,28 @@
         <ul class="mb-5 drac-list drac-list-none">
             
             <li class="drac-box">
-                <a href="./."
+                <a href=".."
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Home
                 </a>
             </li>
             <li class="drac-box">
-                <a href="./padroes/"
+                <a href="../padroes/"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Padrões do Projeto
                 </a>
             </li>
             <li class="drac-box">
-                <a href="./arquitetura/"
+                <a href="../arquitetura/"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Arquitetura
                 </a>
             </li>
             <li class="drac-box">
-                <a href="./."
+                <a href=".."
                     class="
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#ferramentas-collapse" aria-expanded="false">
@@ -97,7 +97,7 @@
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
-        <a href="./componentes/apache_spark.md"
+        <a href="../componentes/apache_spark.md"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Apache Spark
@@ -105,7 +105,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="./componentes/apache_airflow.md"
+        <a href="../componentes/apache_airflow.md"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Apache Airflow
@@ -113,7 +113,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="./componentes/minio.md"
+        <a href="../componentes/minio.md"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             MinIO
@@ -123,15 +123,15 @@
                 </div>
             </li>
             <li class="drac-box">
-                <a href="./pipeline.md"
+                <a href="../pipeline.md"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Pipeline de Dados
                 </a>
             </li>
             <li class="drac-box">
-                <a href="./dashboard/"
-                    class="
+                <a href="./"
+                    class=" active 
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Dashboard
                 </a>
@@ -161,12 +161,28 @@
                     <!-- block preview -->
                     <li class="nav-item">
                             
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../arquitetura/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a 
+                        class="btn-preview drac-btn drac-text-white--hover disabled" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
                     </li>
                     <!--  endblock -->
 
                     <!-- block search -->
                     <li class="nav-item"><div role="search" class="search-box">
-	<form id="rtd-search-form" class="wy-form" action="./search.html" method="get">
+	<form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
 		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
 		placeholder="Search docs" title="Type search term here" />
 	</form>
@@ -189,25 +205,65 @@
             <!-- endblock -->
 
             <!-- block content -->
-	<section class="p-md-5 content-search">
-		<article>
-			<p></p>
-			<h1 id="search">Search Results</h1>
-			<hr>
-
-			<form id="content_search" action="search.html">
-				<span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-				<input name="q" id="mkdocs-search-query" type="text" class="drac-input drac-input-purple drac-text-white search_input search-query ui-autocomplete-input"
-					placeholder="Search the Docs" autocomplete="off" autofocus title="Type search term here">
-			</form>
-			
-			<div id="mkdocs-search-results" class="search-results" data-no-results-text="No results found">
-				Searching...
-			</div>
-
-		</article>
-	</section>
-
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="dashboard">Dashboard</h1>
+<hr />
+<h2 id="introducao">Introdução</h2>
+<p>Este documento descreve o processo de criação de um dashboard utilizando o Power BI, a partir de dados recebidos por meio de uma pipeline de dados. Além disso aborda a utilização de recursos adicionais, como vídeos no YouTube e artigos, para garantir a entrega de um dashboard de alta qualidade.</p>
+<h2 id="ferramenta">Ferramenta</h2>
+<p>Utilizamos o Power BI por ser uma ferramenta de visualização de dados da Microsoft que permite a criação de dashboards interativos e informativos. Com uma interface intuitiva e diversas opções de visualização, o Power BI é amplamente utilizado em empresas de diversos setores para análise de dados e tomada de decisões.</p>
+<p><br></p>
+<h2 id="passos-executados">Passos executados</h2>
+<p><br></p>
+<p><strong>1. Coleta e Pré-Processamento de Dados</strong> </p>
+<ul>
+<li>Definição dos Requisitos de Dados</li>
+<li>Identificação das fontes de dados necessárias.</li>
+<li>Determinação dos KPIs e métricas relevantes para o dashboard.</li>
+<li>Configuração da Pipeline de Dados</li>
+</ul>
+<p><strong>2. Importação de Dados para o Power BI</strong> </p>
+<ul>
+<li>Conexão às Fontes de Dados</li>
+<li>Utilização das funcionalidades de importação de dados do Power BI.</li>
+<li>Configuração de conexões a bancos de dados, arquivos CSV, Excel, APIs, etc.</li>
+<li>Modelagem de Dados</li>
+<li>Criação de relacionamentos entre tabelas.</li>
+</ul>
+<p><strong>3. Criação do Dashboard</strong> </p>
+<ul>
+<li>Design e Layout do Dashboard</li>
+<li>Escolha de visualizações apropriadas (gráficos de barras, gráficos de linhas, etc.).</li>
+<li>Inserção e configuração de gráficos e tabelas no Power BI.</li>
+<li>Personalização de cores, fontes e outros aspectos visuais para melhorar a apresentação.</li>
+<li>Adição de filtros para permitir a exploração interativa dos dados.</li>
+<li>Configuração de <em>drill-throughs</em> e links para aprofundar em detalhes específicos.</li>
+</ul>
+<p><strong>4. Validação e Refinamento</strong> </p>
+<ul>
+<li>Verificação de Consistência dos Dados</li>
+<li>Checagem de precisão e integridade dos dados importados e modelados.</li>
+<li>Comparação com fontes originais para garantir consistência.</li>
+<li>Testes de Usabilidade.</li>
+</ul>
+<p><br></p>
+<h2 id="referencias">Referências</h2>
+<p>Vídeos no Youtube:</p>
+<ul>
+<li><strong>"Power BI Full Course - Learn Power BI in 4 Hours | Power BI Tutorial | Edureka"</strong>: Tutorial abrangente que cobre desde a importação de dados até a criação de dashboards.</li>
+<li><strong>"Advanced Power BI Techniques for Building Effective Dashboards | Guy in a Cube"</strong>: Técnicas avançadas para aprimorar a funcionalidade e a estética dos dashboards.</li>
+</ul>
+<p>Artigos e Blogs:</p>
+<ul>
+<li><strong>"10 Tips for Creating Effective Power BI Dashboards" (Microsoft Power BI Blog)</strong>: Dicas práticas para criar dashboards eficientes e informativos.</li>
+<li><strong>"Data Visualization Best Practices in Power BI" (SQLBI)</strong>: Melhores práticas para visualização de dados utilizando Power BI.</li>
+</ul>
+<p><br></p>
+<h2 id="conclusao">Conclusão</h2>
+<p>A criação de um dashboard no Power BI, suportada por uma pipeline de dados robusta, permite uma visualização clara e interativa das métricas e KPIs relevantes. A utilização de recursos adicionais, como vídeos e artigos, contribui para a entrega de um produto final de alta qualidade, alinhado às melhores práticas do mercado.</p></p>
+    </article>
+</section>
             <!-- endblock -->
 
             <!-- block footer -->
@@ -224,11 +280,11 @@
 
     </main>
 
-        <script>var base_url = '.';</script>
-        <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
-        <script src="./assets/js/bootstrap.bundle.min.js"></script>
-        <script src="./assets/js/mkdocs.js"></script>
-			<script src="./search/main.js" defer></script>
+        <script>var base_url = '..';</script>
+        <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/mkdocs.js"></script>
+			<script src="../search/main.js" defer></script>
 
 </body>
 
