@@ -80,6 +80,13 @@
                 </a>
             </li>
             <li class="drac-box">
+                <a href="../ferramentas/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Ferramentas
+                </a>
+            </li>
+            <li class="drac-box">
                 <a href="./"
                     class=" active 
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
@@ -87,46 +94,10 @@
                 </a>
             </li>
             <li class="drac-box">
-                <a href=".."
-                    class="
-                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#ferramentas-collapse" aria-expanded="false">
-                    Ferramentas
-                </a>
-                <div class="collapse" id="ferramentas-collapse">
-                    <ul class="mb-5 drac-list drac-list-none">
-                            
-    <li class="drac-box-ternary">
-        <a href="../componentes/apache_spark.md"
-            class="
-            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-            Apache Spark
-        </a>
-    </li>
-                            
-    <li class="drac-box-ternary">
-        <a href="../componentes/apache_airflow.md"
-            class="
-            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-            Apache Airflow
-        </a>
-    </li>
-                            
-    <li class="drac-box-ternary">
-        <a href="../componentes/minio.md"
-            class="
-            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-            MinIO
-        </a>
-    </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="drac-box">
-                <a href="../pipeline.md"
+                <a href="../etl/"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-                    Pipeline de Dados
+                    ETL
                 </a>
             </li>
             <li class="drac-box">
@@ -164,13 +135,13 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href="../padroes/"
+                    <a href="../ferramentas/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </div>
                 <div class="col">
-                    <a href="../dashboard/"
+                    <a href="../etl/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
@@ -207,7 +178,26 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p></p>
+        <p><h1 id="arquitetura-do-projeto">Arquitetura do Projeto</h1>
+<p><br></p>
+<p><img alt="System Architecture" src="../assets/architecture.png" title="Arquitetura do Sistema" /></p>
+<p><br></p>
+<hr />
+<h2 id="banco-relacional">Banco relacional</h2>
+<p>A ingestão de dados é feita a partir de um banco de dados relacional, onde são armazenados os dados brutos do sistema de E-commerce. </p>
+<h2 id="etl">ETL</h2>
+<p>Fluxo da pipeline explicado em <a href="../etl/">ETL</a></p>
+<h2 id="ferramentas">Ferramentas</h2>
+<p>Para saber mais sobre as ferramentas utilizadas no projeto, acesse <a href="../ferramentas/">Ferramentas</a></p>
+<h2 id="banco-dimensional">Banco dimensional</h2>
+<p>O banco dimensional é o responsável por armazenar os dados de forma otimizada para a realização de consultas analíticas. O mesmo possui as seguintes tabelas:</p>
+<ul>
+<li><strong>Dimensão de Categorias de Produtos</strong></li>
+<li><strong>Dimensão de Localização</strong></li>
+<li><strong>Dimensão de Vendedores</strong></li>
+<li><strong>Dimensão de Clientes</strong></li>
+<li><strong>Fato de Vendas</strong></li>
+</ul></p>
     </article>
 </section>
             <!-- endblock -->
