@@ -3,10 +3,11 @@ nav:
   - Home: index.md
   - Padrões do Projeto: padroes.md
   - Arquitetura: arquitetura.md
+  - ETL: etl.md
   - Ferramentas:
-      - Apache Spark: componentes/apache_spark.md
-      - Apache Airflow: componentes/apache_airflow.md
-      - MinIO: componentes/minio.md
+      - Apache Spark: ferramentas/apache_spark.md
+      - Apache Airflow: ferramentas/apache_airflow.md
+      - MinIO: ferramentas/minio.md
   - Pipeline de Dados: pipeline.md
   - Dashboard: dashboard.md
 theme:
