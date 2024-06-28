@@ -80,6 +80,7 @@ O versionamento é feito com base na metodologia [SEMVER](https://semver.org/lan
 * **[Lucas de Oliveira Alano](https://github.com/LucasAlano)** - *Orquestração*
 * **[Vinicius Albino dos Santos](https://github.com/Shinguek0)** - *Data Visualization*
 * **[Vitor Loch Mafei Rosa](https://github.com/VitorM3)** - *DBA*
+* **[Vitor Loch Mafei Rosa](https://github.com/VitorLMR)** - *DBA*
 * **[Vitor Minatto Barp](https://github.com/Minattoo)** - *Data Visualization*
 * **[Yuri Lopes Machado](https://github.com/YuriLopesM)** - *Documentação*
 
