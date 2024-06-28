@@ -9,4 +9,4 @@ nav:
   - Pipeline de Dados: pipeline.md
   - Dashboard: dashboard.md
 theme:
-  name: material
+  name: gitbook
