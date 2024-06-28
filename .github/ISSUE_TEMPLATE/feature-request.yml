@@ -1,25 +1,41 @@
-name: Feature Request
+name: Feature request
+description: Suggest an idea for this project
+title: "[FEAT]: "
+labels: ["enhancement", "question"]
+assignees: ''
 
-about: Suggest an idea for this project
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! Please provide the following information:
 
-title: "[FEATURE]: "
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: A brief title for your feature request
+      placeholder: Feature title
+    validations:
+      required: true
 
-labels:
-  - enhancement
-  - question
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A detailed description of the feature request
+      placeholder: Describe the feature
+    validations:
+      required: true
 
-body: |
-  **Is your feature request related to a problem? Please describe.**
-  A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
-
-  **Describe the solution you'd like**
-  A clear and concise description of what you want to happen.
-
-  **Describe alternatives you've considered**
-  A clear and concise description of any alternative solutions or features you've considered.
-
-  **Additional context**
-  Add any other context or screenshots about the feature request here.
-
-assignees:
-  -
+  - type: dropdown
+    id: importance
+    attributes:
+      label: Importance
+      description: How important is this feature to you?
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true
